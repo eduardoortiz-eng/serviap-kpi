@@ -128,7 +128,7 @@ tbody td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:t
 <!-- ═══════════ HEADER ═══════════ -->
 <header class="site-header">
   <h1>Onboardings &amp; Offboardings</h1>
-  <span class="header-badge">Corte: 18 Ago 2026 &nbsp;·&nbsp; 391 onboardings &nbsp;·&nbsp; 185 en proceso</span>
+  <span class="header-badge">Corte: 31 Ago 2026 &nbsp;·&nbsp; 391 onboardings &nbsp;·&nbsp; 185 en proceso</span>
 </header>
 
 <div class="container">
@@ -178,7 +178,7 @@ tbody td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:t
   ══════════════════════════════════════ -->
   <div class="view-panel active" id="view-general">
     <div class="kpi-row" id="gen-kpi-row">
-      <div class="kpi-card green"><div class="kpi-label">Activos</div><div class="kpi-value" id="kpi-activos">—</div><div class="kpi-sub">Al corte 18 Ago 2026</div></div>
+      <div class="kpi-card green"><div class="kpi-label">Activos</div><div class="kpi-value" id="kpi-activos">—</div><div class="kpi-sub">Al corte 31 Ago 2026</div></div>
       <div class="kpi-card med-green"><div class="kpi-label">Onboardings</div><div class="kpi-value" id="kpi-on">—</div><div class="kpi-sub" id="kpi-on-sub">Período seleccionado</div></div>
       <div class="kpi-card orange"><div class="kpi-label">Offboardings</div><div class="kpi-value" id="kpi-off">—</div><div class="kpi-sub" id="kpi-off-sub">Período seleccionado</div></div>
       <div class="kpi-card" id="kpi-neto-card"><div class="kpi-label">Neto</div><div class="kpi-value" id="kpi-neto">—</div><div class="kpi-sub">Ingresos − Bajas</div></div>
@@ -214,7 +214,7 @@ tbody td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:t
         <h3 style="margin:0">Balance de HC por País</h3>
         <button class="btn-export" onclick="exportCountryBalance()">&#11015; Exportar Excel</button>
       </div>
-      <p style="margin:0 0 10px;font-size:13px;color:#7B9674">HC real al corte 18 Ago 2026 menos bajas en proceso del mes corriente</p>
+      <p style="margin:0 0 10px;font-size:13px;color:#7B9674">HC real al corte 31 Ago 2026 menos bajas en proceso del mes corriente</p>
       <div class="table-wrap">
         <table id="tbl-hc-country">
           <thead><tr><th>País</th><th style="text-align:center">HC Actual (est.)</th><th style="text-align:center">Bajas Pendientes</th><th style="text-align:center">HC Proyectado</th></tr></thead>
@@ -375,12 +375,21 @@ tbody td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:t
 ════════════════════════════════════════════ -->
 <script>
 const OB_DATA = [
-{name:"Jose Felix Quintero Aguilar",customer:"Oyster. HR Inc.",country:"Panama",start_date:"2026-09-02",status:"En proceso",job:"Senior GRC Analyst I"},
-{name:"Daniella Alexandra Ramos Juliao",customer:"Oyster. HR Inc.",country:"Panama",start_date:"2026-09-02",status:"En proceso",job:"Senior GRC Analyst I"},
-{name:"Kishor Kamble",customer:"Yango Delivery Global FZ. LLC",country:"India",start_date:"2026-08-25",status:"Recibido",job:"Partner support manager"},
-{name:"Anish Basnet",customer:"Yango Delivery Global FZ. LLC",country:"Nepal",start_date:"2026-09-01",status:"En proceso",job:"Quality control specialist"},
+{name:"Felipe Vasconselos Lana",customer:"Rivermate B.V.",country:"Brazil",start_date:"2026-09-01",status:"En proceso",job:"Account Manager"},
+{name:"Rajan Lama",customer:"DIRECT CURSUS TECHNOLOGY L.L.C.",country:"Nepal",start_date:"2026-09-24",status:"En proceso",job:"Financial Controller"},
+{name:"Ali Imtisal Naqi",customer:"DIRECT CURSUS TECHNOLOGY L.L.C.",country:"Pakistan",start_date:"2026-09-03",status:"En proceso",job:"Support Manager"},
+{name:"Ali Shahid Hussain",customer:"DIRECT CURSUS TECHNOLOGY L.L.C.",country:"Pakistan",start_date:"2026-09-03",status:"En proceso",job:"Manager"},
+{name:"Alejandro Martínez Juárez",customer:"Line Up Limited",country:"Mexico",start_date:"2026-09-01",status:"En proceso",job:"Warranty Engineer (On-site Warranty Coordinator)"},
+{name:"Ricardo Humberto Delgado Cotreras",customer:"INS Global Limited",country:"Panama",start_date:"2026-09-28",status:"En proceso",job:"After-sales Service Engineer—Panama"},
+{name:"Bruno Leonardo River Zavala",customer:"CootaWork",country:"Mexico",start_date:"2026-09-07",status:"En proceso",job:"Cloud Service Engineer"},
+{name:"Laura Isabel Quiceno Cardenas",customer:"UniFirst Corporation",country:"Colombia",start_date:"2026-09-08",status:"En proceso",job:"Credit & Collections Analyst I"},
+{name:"Edgar Omar Miranda Aranda",customer:"RIVERMATE B.V.",country:"Mexico",start_date:"2026-09-01",status:"En proceso",job:"Senior Data Engineer"},
+{name:"Jose Felix Quintero Aguilar",customer:"Oyster. HR Inc.",country:"Panama",start_date:"2026-09-30",status:"En proceso",job:"Senior GRC Analyst I"},
+{name:"Daniella Alexandra Ramos Juliao",customer:"Oyster. HR Inc.",country:"Panama",start_date:"2026-09-30",status:"En proceso",job:"Senior GRC Analyst I"},
+{name:"Kishor Kamble",customer:"Yango Delivery Global FZ. LLC",country:"India",start_date:"2026-08-25",status:"En proceso",job:"Partner support manager"},
+{name:"Anish Basnet",customer:"Yango Delivery Global FZ. LLC",country:"Nepal",start_date:"2026-09-01",status:"Completado",job:"Quality control specialist"},
 {name:"César Dragunsky",customer:"RIVERMATE B.V.",country:"Mexico",start_date:"2026-09-01",status:"En proceso",job:"Staff Software Engineer"},
-{name:"Stefanne Bortoletto",customer:"RIVERMATE B.V.",country:"Brazil",start_date:"2026-09-01",status:"En proceso",job:"Site Services Specialist"},
+{name:"Stefanne Maria Jeha Bortoletto",customer:"RIVERMATE B.V.",country:"Brazil",start_date:"2026-09-01",status:"Completado",job:"Site Services Specialist"},
 {name:"Alexander Said Ramirez Jarquin",customer:"CootaWork",country:"Mexico",start_date:"2026-08-20",status:"Completado",job:"Cloud Service Engineer"},
 {name:"Amad Jazar",customer:"LLC Breakthrough Technologies",country:"Saudi Arabia",start_date:"2026-08-13",status:"En proceso",job:"Business Consulting Specialist"},
 {name:"Sidahemed Elleyat",customer:"Ridetechnology Global FZ. LLC",country:"Mauritania",start_date:"2026-08-18",status:"Completado",job:"Fleet Acquisition Manager"},
@@ -389,18 +398,18 @@ const OB_DATA = [
 {name:"Edgar Francisco Portillo Solis",customer:"Fesco Adecco Human Resources Service Shanghai Co",country:"Mexico",start_date:"2026-08-17",status:"Completado",job:"Advanced Product Solution Engineer"},
 {name:"Estephania De la Concha Uribe",customer:"Hotel Rehabs LLC",country:"Mexico",start_date:"2026-08-10",status:"Completado",job:"Talent Acquisition Specialist"},
 {name:"Clay Parfait Ndong Ondo",customer:"Ridetechnology Global FZ. LLC",country:"Gabon",start_date:"2026-08-17",status:"Completado",job:"Fleet Acquisition Manager"},
-{name:"Jennifer Yannine Vélez Pantoja",customer:"UniFirst Corporation",country:"Colombia",start_date:"2026-08-21",status:"En proceso",job:"Credit & Collections Analyst I"},
+{name:"Jennifer Yannine Vélez Pantoja",customer:"UniFirst Corporation",country:"Colombia",start_date:"2026-08-21",status:"Completado",job:"Credit & Collections Analyst I"},
 {name:"Bipasha Sharma",customer:"Yango Delivery Global FZ. LLC",country:"Nepal",start_date:"2026-08-10",status:"Completado",job:"Quality control specialist"},
 {name:"Sheneka Rushell Bryan Byfield",customer:"Oyster. HR Inc.",country:"Jamaica",start_date:"2026-08-04",status:"Completado",job:"Performance Excellence Manager"},
 {name:"Mónica Alexandra Oliveros Guerrero",customer:"Horizons Global Technology Pte Ltd",country:"Guatemala",start_date:"2026-08-08",status:"En proceso",job:"Corporate Key Account Manager"},
 {name:"Daniela Alejandra Araya Segura",customer:"FESCO PERSONNEL HK CO LIMITED",country:"Costa Rica",start_date:"2026-08-10",status:"Completado",job:"Sales Manager"},
-{name:"Huang Xiangxun",customer:"Ideal-careerbridge Holdings (hk) Limited",country:"Colombia",start_date:"2026-09-15",status:"Recibido",job:"Product Manager"},
+{name:"Huang Xiangxun",customer:"Ideal-careerbridge Holdings (hk) Limited",country:"Colombia",start_date:"2026-09-15",status:"En proceso",job:"Product Manager"},
 {name:"Andres Cathey Cevallos",customer:"Horizons Global Technology Pte Ltd",country:"Ecuador",start_date:"2026-11-16",status:"Completado",job:"Edge Plasma Physicist"},
 {name:"Luis Contreras Garza",customer:"INTEGRATED GLOBAL SERVICES, INC. (IGS)",country:"Mexico",start_date:"2026-08-03",status:"Completado",job:"Business Development Manager"},
 {name:"Suelle Shanique Anglin",customer:"Oyster. HR Inc.",country:"Jamaica",start_date:"2026-09-01",status:"En proceso",job:"Communications Specialist"},
 {name:"Sudip Luitel",customer:"Yango Delivery Global FZ. LLC",country:"Nepal",start_date:"2026-08-03",status:"Completado",job:"Sales Manager"},
 {name:"Dikshya Mahat",customer:"Yango Delivery Global FZ. LLC",country:"Nepal",start_date:"2026-08-03",status:"Completado",job:"Customer Support Specialist"},
-{name:"Marcelo Pablo Squillario",customer:"INS Global Limited",country:"Argentina",start_date:"2026-08-19",status:"En proceso",job:"Latin America Sales"},
+{name:"Marcelo Pablo Squillario",customer:"INS Global Limited",country:"Argentina",start_date:"2026-09-01",status:"En proceso",job:"Latin America Sales"},
 {name:"Usama Bin Zubair",customer:"DIRECT CURSUS TECHNOLOGY L.L.C.",country:"Pakistan",start_date:"2026-08-04",status:"Completado",job:"Sales Manager for corporate clients"},
 {name:"Zulima Moreno Bedoya",customer:"UniFirst Corporation",country:"Colombia",start_date:"2026-08-03",status:"Completado",job:"Talent Acquisition Specialist"},
 {name:"Valentina Arce",customer:"Neeyamo. Inc",country:"Argentina",start_date:"2026-08-06",status:"Completado",job:"Developer Engagement Representative"},
@@ -458,7 +467,6 @@ const OB_DATA = [
 {name:"Eliseo Huang",customer:"Horizons Global Technology Pte Ltd",country:"Panama",start_date:"2026-08-10",status:"Completado",job:": Solution Engineer (LATAM)"},
 {name:"Rojina Thapa",customer:"Yango Delivery Global FZ. LLC",country:"Nepal",start_date:"2026-07-08",status:"Completado",job:"Customer Support Specialist"},
 {name:"Ritesh Maharjan",customer:"Yango Delivery Global FZ. LLC",country:"Nepal",start_date:"2026-07-08",status:"Completado",job:"Customer Support Specialist"},
-{name:"Luis Alberto Loja Portocarrero",customer:"RIVERMATE B.V.",country:"Peru",start_date:"2026-07-01",status:"En proceso",job:"Business Development Manager"},
 {name:"Edgar Manuel Sandoval Contreras",customer:"Gonex International technology(HK)Co., Limited",country:"Mexico",start_date:"2026-07-01",status:"Completado",job:"Technical Support Engineer"},
 {name:"Usman Ghani",customer:"Yango Delivery Global FZ. LLC",country:"Pakistan",start_date:"2026-07-01",status:"Completado",job:"Sales Manager"},
 {name:"Muhammad Ali Zahid",customer:"Yango Delivery Global FZ. LLC",country:"Pakistan",start_date:"2026-07-08",status:"Completado",job:"Key Accounts Expert"},
@@ -493,7 +501,7 @@ const OB_DATA = [
 {name:"Muhammad Awais",customer:"Yango Delivery Global FZ. LLC",country:"Pakistan",start_date:"2026-07-01",status:"Completado",job:"Customer Support Specialist"},
 {name:"Aliza Raza",customer:"Yango Delivery Global FZ. LLC",country:"Pakistan",start_date:"2026-07-01",status:"Completado",job:"Customer Support Specialist"},
 {name:"Syed Muhammad Mohsin Jilani",customer:"Yango Delivery Global FZ. LLC",country:"Pakistan",start_date:"2026-07-01",status:"Completado",job:"Customer Support Specialist"},
-{name:"María José Salazar Londoño",customer:"RIVERMATE B.V.",country:"Colombia",start_date:"2026-09-01",status:"En proceso",job:"Senior Researcher"},
+{name:"María José Salazar Londoño",customer:"RIVERMATE B.V.",country:"Colombia",start_date:"2026-09-02",status:"En proceso",job:"Senior Researcher"},
 {name:"Chia Kok Hee",customer:"AFORZA LIMITED",country:"Malaysia",start_date:"2026-06-15",status:"Completado",job:"Senior Project Manager"},
 {name:"Muhammad Ahad Butt",customer:"Yango Delivery Global FZ. LLC",country:"Pakistan",start_date:"2026-07-01",status:"Completado",job:"Sales Manager"},
 {name:"Anas Ali",customer:"Yango Delivery Global FZ. LLC",country:"Pakistan",start_date:"2026-07-01",status:"Completado",job:"Operator"},
@@ -781,8 +789,21 @@ const OB_DATA = [
 ];
 
 const OFF_DATA = [
+{name:"Marcello Calegaris Marins de Paulo",customer:"FESCO PERSONNEL HK CO LIMITED",country:"Brazil",last_date:"2026-08-13",reason:"Resignation",category:"Renuncia",status:"Finalizado",finalized:true},
+{name:"Júlia de Almeida Medeiros",customer:"FESCO PERSONNEL HK CO LIMITED",country:"Brazil",last_date:"2026-08-05",reason:"Resignation",category:"Renuncia",status:"Finalizado",finalized:true},
+{name:"Anne Yin Li Wang",customer:"FESCO PERSONNEL HK CO LIMITED",country:"Brazil",last_date:"2026-08-05",reason:"Resignation",category:"Renuncia",status:"Finalizado",finalized:true},
+{name:"Jacqueline Meei Jy Chen",customer:"FESCO PERSONNEL HK CO LIMITED",country:"Brazil",last_date:"2026-08-05",reason:"Resignation",category:"Renuncia",status:"Finalizado",finalized:true},
+{name:"Roger Rafael Rivera Baez",customer:"Accela Inc",country:"Costa Rica",last_date:"2026-08-21",reason:"Dismissal",category:"Despido",status:"Finalizado",finalized:true},
+{name:"Oscar Mario Alvarado Gutierrez",customer:"Accela Inc",country:"Costa Rica",last_date:"2026-08-21",reason:"Dismissal",category:"Despido",status:"Finalizado",finalized:true},
+{name:"Carlos Chanto Hernandez",customer:"Accela Inc",country:"Costa Rica",last_date:"2026-08-21",reason:"Dismissal",category:"Despido",status:"Finalizado",finalized:true},
+{name:"Claudio Valentin Andrade Gonzalez",customer:"Accela Inc",country:"Costa Rica",last_date:"2026-08-21",reason:"Dismissal",category:"Despido",status:"Finalizado",finalized:true},
 {name:"Tabrez Bin Hamid",customer:"Yango Delivery Global FZ. LLC",country:"Pakistan",last_date:"2026-07-21",reason:"Other",category:"Renuncia",status:"Finalizado",finalized:true},
+{name:"Martha Josefina Torices Saldaña",customer:"Remofirst",country:"Mexico",last_date:"2026-07-31",reason:"Resignation",category:"Renuncia",status:"Finalizado",finalized:true},
+{name:"Meng Chao",customer:"Iflight",country:"Mexico",last_date:"2026-08-10",reason:"Resignation",category:"Renuncia",status:"Finalizado",finalized:true},
+{name:"Marco Tulio Villalobos Martinez",customer:"Circles Life Asia Technology Pte. Ltd.",country:"Mexico",last_date:"2026-08-04",reason:"Dismissal",category:"Despido",status:"Finalizado",finalized:true},
+{name:"Muhammad Huzaifah",customer:"Yango Delivery Global FZ. LLC",country:"Pakistan",last_date:"2026-07-13",reason:"Resignation",category:"Renuncia",status:"Finalizado",finalized:true},
 {name:"Paul Bañuelos Sahagun",customer:"Oyster. HR Inc.",country:"Mexico",last_date:"2026-07-31",reason:"Dismissal",category:"Despido",status:"Finalizado",finalized:true},
+{name:"Carol Cristel Castillo Pinto",customer:"Color Brands",country:"Chile",last_date:"2026-07-30",reason:"Dismissal",category:"Despido",status:"Finalizado",finalized:true},
 {name:"Anzal Eman",customer:"Yango Delivery Global FZ. LLC",country:"Pakistan",last_date:"2026-07-13",reason:"Other",category:"Renuncia",status:"Finalizado",finalized:true},
 {name:"Erik Eduardo Alcala Salero",customer:"AFORZA LIMITED",country:"Mexico",last_date:"2026-08-17",reason:"Labor Contract Not Renewed",category:"Despido",status:"Finalizado",finalized:true},
 {name:"Jerdy Jose Perez Franco",customer:"Omnipresent",country:"Dominican Republic",last_date:"2026-07-31",reason:"Resignation",category:"Renuncia",status:"Finalizado",finalized:true},
@@ -988,18 +1009,41 @@ const OFF_DATA = [
 {name:"Alonso Sebastian Mujica Bascuñan",customer:"Smart Edge Technologies Pte. Ltd.",country:"Chile",last_date:"2026-01-12",reason:"Dismissal",category:"Despido",status:"Finalizado",finalized:true},
 {name:"Elizabeth Jeannette Naranjo Leiva",customer:"Smart Edge",country:"Chile",last_date:"2026-01-12",reason:"Dismissal",category:"Despido",status:"Finalizado",finalized:true},
 {name:"Frederic Francois Bruno Neau",customer:"Helma",country:"Panama",last_date:"2026-02-28",reason:"Dismissal",category:"Despido",status:"Finalizado",finalized:true},
+{name:"Adolfo de Jesus Ibarra Rangel",customer:"KMC Solutions AUS PTY. LTD",project:"Orchard Colombia",country:"Colombia",last_date:"2026-08-31",reason:"Resignation",category:"Renuncia",status:"En proceso",finalized:false,ticket_status:"Requested (1/5)",ticket_owner:"Carolina Almanza"},
+{name:"Erich Hernan Kalau Von Hofe Jacob",customer:"Remofirst",project:"Intersurgical Limited",country:"Chile",last_date:"2026-08-26",reason:"Resignation",category:"Renuncia",status:"En proceso",finalized:false,ticket_status:"Requested (1/5)",ticket_owner:""},
+{name:"Adriana Adelaida Delgado Herrera",customer:"Help Peru Inc",project:"Help Peru Inc",country:"Peru",last_date:"2026-10-31",reason:"Resignation",category:"Renuncia",status:"En proceso",finalized:false,ticket_status:"Calculation in progress (2/5)",ticket_owner:""},
+{name:"Muhammad Bilal Aslam",customer:"Yango Delivery Global FZ LLC",project:"Eats",country:"Pakistan",last_date:"2026-08-31",reason:"Total project closing",category:"Cierre de proyecto",status:"En proceso",finalized:false,ticket_status:"Requested (1/5)",ticket_owner:"Eduardo Ortiz"},
+{name:"Muhammad Hussnain Jamshaid",customer:"Yango Delivery Global FZ LLC",project:"Eats",country:"Pakistan",last_date:"2026-08-31",reason:"Total project closing",category:"Cierre de proyecto",status:"En proceso",finalized:false,ticket_status:"Requested (1/5)",ticket_owner:"Eduardo Ortiz"},
+{name:"Abbas Jokhio",customer:"Yango Delivery Global FZ LLC",project:"Eats",country:"Pakistan",last_date:"2026-08-31",reason:"Total project closing",category:"Cierre de proyecto",status:"En proceso",finalized:false,ticket_status:"Requested (1/5)",ticket_owner:"Eduardo Ortiz"},
+{name:"Hiba Shahzeel Khan",customer:"Yango Delivery Global FZ LLC",project:"Eats",country:"Pakistan",last_date:"2026-08-31",reason:"Total project closing",category:"Cierre de proyecto",status:"En proceso",finalized:false,ticket_status:"Requested (1/5)",ticket_owner:"Eduardo Ortiz"},
+{name:"Muhammad Ahmad",customer:"Yango Delivery Global FZ LLC",project:"Eats",country:"Pakistan",last_date:"2026-08-31",reason:"Total project closing",category:"Cierre de proyecto",status:"En proceso",finalized:false,ticket_status:"Requested (1/5)",ticket_owner:"Eduardo Ortiz"},
+{name:"Abeera Maruf",customer:"Yango Delivery Global FZ LLC",project:"Eats",country:"Pakistan",last_date:"2026-08-31",reason:"Total project closing",category:"Cierre de proyecto",status:"En proceso",finalized:false,ticket_status:"Requested (1/5)",ticket_owner:"Eduardo Ortiz"},
+{name:"Rafia Shahzad",customer:"Yango Delivery Global FZ LLC",project:"Eats",country:"Pakistan",last_date:"2026-08-31",reason:"Total project closing",category:"Cierre de proyecto",status:"En proceso",finalized:false,ticket_status:"Requested (1/5)",ticket_owner:"Eduardo Ortiz"},
+{name:"Maira",customer:"Yango Delivery Global FZ LLC",project:"Eats",country:"Pakistan",last_date:"2026-08-31",reason:"Total project closing",category:"Cierre de proyecto",status:"En proceso",finalized:false,ticket_status:"Requested (1/5)",ticket_owner:"Eduardo Ortiz"},
+{name:"Azmat Ullah",customer:"Yango Delivery Global FZ LLC",project:"Eats",country:"Pakistan",last_date:"2026-08-31",reason:"Total project closing",category:"Cierre de proyecto",status:"En proceso",finalized:false,ticket_status:"Requested (1/5)",ticket_owner:"Eduardo Ortiz"},
+{name:"Adain Naeem",customer:"Yango Delivery Global FZ LLC",project:"Eats",country:"Pakistan",last_date:"2026-08-31",reason:"Total project closing",category:"Cierre de proyecto",status:"En proceso",finalized:false,ticket_status:"Requested (1/5)",ticket_owner:"Eduardo Ortiz"},
+{name:"Miguel Quijano Jaramillo",customer:"KMC Solutions AUS PTY. LTD",project:"Orchard Colombia",country:"Colombia",last_date:"2026-08-31",reason:"Resignation",category:"Renuncia",status:"En proceso",finalized:false,ticket_status:"Requested (1/5)",ticket_owner:"Carolina Almanza"},
+{name:"Luis Miguel Rua Rios",customer:"KMC Solutions AUS PTY. LTD",project:"Orchard Colombia",country:"Colombia",last_date:"2026-08-31",reason:"Resignation",category:"Renuncia",status:"En proceso",finalized:false,ticket_status:"Requested (1/5)",ticket_owner:"Carolina Almanza"},
+{name:"Carlos Felipe Pérez Contreras",customer:"KMC Solutions AUS PTY. LTD",project:"Orchard Colombia",country:"Colombia",last_date:"2026-08-31",reason:"Resignation",category:"Renuncia",status:"En proceso",finalized:false,ticket_status:"Requested (1/5)",ticket_owner:"Carolina Almanza"},
+{name:"Alejandro Aguirre Gomez",customer:"KMC Solutions AUS PTY. LTD",project:"Orchard Colombia",country:"Colombia",last_date:"2026-08-31",reason:"Resignation",category:"Renuncia",status:"En proceso",finalized:false,ticket_status:"Requested (1/5)",ticket_owner:"Carolina Almanza"},
+{name:"William Leandro Aristizabal Giraldo",customer:"KMC Solutions AUS PTY. LTD",project:"Orchard Colombia",country:"Colombia",last_date:"2026-08-31",reason:"Resignation",category:"Renuncia",status:"En proceso",finalized:false,ticket_status:"Requested (1/5)",ticket_owner:"Carolina Almanza"},
+{name:"Carla Rocio Aroca Raffo",customer:"Help Peru Inc",project:"HELP PERU INC",country:"Peru",last_date:"2026-10-31",reason:"Resignation",category:"Renuncia",status:"En proceso",finalized:false,ticket_status:"Calculation in progress (2/5)",ticket_owner:""},
+{name:"Jose Mauricio Rubio Villatoro",customer:"Remofirst",project:"Golden State Assembly",country:"El Salvador",last_date:"2026-08-31",reason:"Resignation",category:"Renuncia",status:"En proceso",finalized:false,ticket_status:"Requested (1/5)",ticket_owner:"Carolina Almanza"},
+{name:"Emilio Castro Deleon",customer:"Remofirst",project:"Golden State Assembly",country:"El Salvador",last_date:"2026-08-31",reason:"Resignation",category:"Renuncia",status:"En proceso",finalized:false,ticket_status:"Requested (1/5)",ticket_owner:"Carolina Almanza"},
+{name:"Elda Quintero",customer:"Ontop Holdings Inc",project:"CARDIF COLOMBIA SEGUROS GENERALES SA",country:"Panama",last_date:"2026-09-04",reason:"Dismissal",category:"Despido",status:"En proceso",finalized:false,ticket_status:"Calculation in progress (2/5)",ticket_owner:"Paulina Fibela"},
+{name:"Isabel Rubiela Diaz Samaniego",customer:"Ontop Holdings Inc",project:"CARDIF COLOMBIA SEGUROS GENERALES SA",country:"Panama",last_date:"2026-09-04",reason:"Dismissal",category:"Despido",status:"En proceso",finalized:false,ticket_status:"Calculation in progress (2/5)",ticket_owner:"Paulina Fibela"},
+{name:"Susana Gabriela Rodriguez Nuñez",customer:"Ontop Holdings Inc",project:"CARDIF COLOMBIA SEGUROS GENERALES SA",country:"Panama",last_date:"2026-09-04",reason:"Dismissal",category:"Despido",status:"En proceso",finalized:false,ticket_status:"Calculation in progress (2/5)",ticket_owner:"Paulina Fibela"},
 {name:"Prajakta Thapa",customer:"Yango Delivery Global FZ. LLC",project:"Eats",country:"Nepal",last_date:"2026-08-18",reason:"Justified Dismissal",category:"Despido",status:"En proceso",finalized:false,ticket_status:"Requested (1/5)",ticket_owner:""},
 {name:"Aqsa Usman",customer:"Yango Delivery Global FZ. LLC",project:"Eats",country:"Pakistan",last_date:"2026-08-31",reason:"Total project closing",category:"Cierre de proyecto",status:"En proceso",finalized:false,ticket_status:"Requested (1/5)",ticket_owner:"Eduardo Ortiz"},
 {name:"Alexis Antonio Ambrosio Robledo",customer:"Insurechain S.L.",project:"Insurechain SL (Change TheBlock)",country:"Mexico",last_date:"2026-08-19",reason:"Resignation",category:"Renuncia",status:"En proceso",finalized:false,ticket_status:"Calculation in revision (3/5)",ticket_owner:""},
-{name:"Crispin Andres Daza Peña",customer:"UniFirst",project:"UniFirst",country:"Colombia",last_date:"2026-08-18",reason:"Resignation",category:"Renuncia",status:"En proceso",finalized:false,ticket_status:"Calculation in progress (2/5)",ticket_owner:""},
-{name:"Rudy Percy Borda Meza",customer:"HIGHTEKERS US LLP Inc.,",project:"Expansión Latinoamérica",country:"Peru",last_date:"2026-09-02",reason:"Dismissal",category:"Despido",status:"En proceso",finalized:false,ticket_status:"Calculation in progress (2/5)",ticket_owner:""},
+{name:"Crispin Andres Daza Peña",customer:"UniFirst",project:"UniFirst",country:"Colombia",last_date:"2026-08-18",reason:"Resignation",category:"Renuncia",status:"En proceso",finalized:false,ticket_status:"Approved (4/5)",ticket_owner:""},
+{name:"Rudy Percy Borda Meza",customer:"HIGHTEKERS US LLP Inc.,",project:"Expansión Latinoamérica",country:"Peru",last_date:"2026-09-02",reason:"Dismissal",category:"Despido",status:"En proceso",finalized:false,ticket_status:"Calculation in revision (3/5)",ticket_owner:""},
 {name:"Joshua Walker",customer:"Globalization Partners",project:"Edelman Public Relations Worldwide Canada Inc",country:"Barbados",last_date:"2026-08-31",reason:"Dismissal",category:"Despido",status:"En proceso",finalized:false,ticket_status:"Requested (1/5)",ticket_owner:""},
 {name:"Shu Harn Mei",customer:"FESCO PERSONNEL HK CO LIMITED",project:"Mixue",country:"Brazil",last_date:"2026-08-14",reason:"Client opening own entity (transfer)",category:"Cliente abre entidad",status:"En proceso",finalized:false,ticket_status:"Approved (4/5)",ticket_owner:""},
 {name:"Diego Angel Andrés León Carrascoza",customer:"Gonex International",project:"Ruijie",country:"Guatemala",last_date:"2026-09-15",reason:"Resignation",category:"Renuncia",status:"En proceso",finalized:false,ticket_status:"Requested (1/5)",ticket_owner:""},
-{name:"Evencio Ito Moreno",customer:"FESCO PERSONNEL HK CO LIMITED",project:"Mixue",country:"Mexico",last_date:"2026-08-13",reason:"Resignation",category:"Renuncia",status:"En proceso",finalized:false,ticket_status:"Calculation in revision (3/5)",ticket_owner:""},
+{name:"Evencio Ito Moreno",customer:"FESCO PERSONNEL HK CO LIMITED",project:"Mixue",country:"Mexico",last_date:"2026-08-13",reason:"Resignation",category:"Renuncia",status:"En proceso",finalized:false,ticket_status:"Approved (4/5)",ticket_owner:""},
 {name:"Josue Angel Mazuelos Cerga",customer:"Ontop Holdings Inc",project:"Data Gis",country:"Peru",last_date:"2026-08-28",reason:"Dismissal",category:"Despido",status:"En proceso",finalized:false,ticket_status:"Offboarding On Hold",ticket_owner:""},
-{name:"Marcello Calegaris Marins de Paulo",customer:"FESCO PERSONNEL HK CO LIMITED",project:"Mixue",country:"Brazil",last_date:"2026-08-13",reason:"Resignation",category:"Renuncia",status:"En proceso",finalized:false,ticket_status:"Approved (4/5)",ticket_owner:""},
-{name:"Leonel Portilla Huerta",customer:"FESCO PERSONNEL HK CO LIMITED",project:"Mixue",country:"Mexico",last_date:"2026-08-12",reason:"Resignation",category:"Renuncia",status:"En proceso",finalized:false,ticket_status:"Calculation in revision (3/5)",ticket_owner:""},
+{name:"Leonel Portilla Huerta",customer:"FESCO PERSONNEL HK CO LIMITED",project:"Mixue",country:"Mexico",last_date:"2026-08-12",reason:"Resignation",category:"Renuncia",status:"En proceso",finalized:false,ticket_status:"Approved (4/5)",ticket_owner:""},
 {name:"Roqayya Zahra",customer:"Yango",project:"Eats",country:"Pakistan",last_date:"2026-08-31",reason:"Total project closing",category:"Cierre de proyecto",status:"En proceso",finalized:false,ticket_status:"Requested (1/5)",ticket_owner:"Eduardo Ortiz"},
 {name:"Hira Naz",customer:"Yango",project:"Eats",country:"Pakistan",last_date:"2026-08-31",reason:"Total project closing",category:"Cierre de proyecto",status:"En proceso",finalized:false,ticket_status:"Requested (1/5)",ticket_owner:"Eduardo Ortiz"},
 {name:"Maira -",customer:"Yango",project:"Eats",country:"Pakistan",last_date:"2026-08-31",reason:"Total project closing",category:"Cierre de proyecto",status:"En proceso",finalized:false,ticket_status:"Requested (1/5)",ticket_owner:"Eduardo Ortiz"},
@@ -1138,56 +1182,45 @@ const OFF_DATA = [
 {name:"Muhammad Hussnain Jamshaid",customer:"Yango",project:"Eats",country:"Pakistan",last_date:"2026-08-31",reason:"Total project closing",category:"Cierre de proyecto",status:"En proceso",finalized:false,ticket_status:"Requested (1/5)",ticket_owner:"Eduardo Ortiz"},
 {name:"Abdullah -",customer:"Yango Delivery Global FZ LLC",project:"Eats",country:"Pakistan",last_date:"2026-08-31",reason:"Total project closing",category:"Cierre de proyecto",status:"En proceso",finalized:false,ticket_status:"Requested (1/5)",ticket_owner:"Eduardo Ortiz"},
 {name:"Azmat Ullah",customer:"Yango Delivery Global FZ LLC",project:"Eats",country:"Pakistan",last_date:"2026-08-31",reason:"Total project closing",category:"Cierre de proyecto",status:"En proceso",finalized:false,ticket_status:"Requested (1/5)",ticket_owner:"Eduardo Ortiz"},
-{name:"Diego Solano Garcia",customer:"FESCO PERSONNEL HK CO LIMITED",project:"Mixue",country:"Mexico",last_date:"2026-08-14",reason:"Resignation",category:"Renuncia",status:"En proceso",finalized:false,ticket_status:"Calculation in revision (3/5)",ticket_owner:""},
-{name:"Karan Ale Magar",customer:"Yango Delivery Global FZ. LLC",project:"Eats",country:"Nepal",last_date:"2026-08-11",reason:"Dismissal",category:"Despido",status:"En proceso",finalized:false,ticket_status:"Requested (1/5)",ticket_owner:""},
+{name:"Diego Solano Garcia",customer:"FESCO PERSONNEL HK CO LIMITED",project:"Mixue",country:"Mexico",last_date:"2026-08-14",reason:"Resignation",category:"Renuncia",status:"En proceso",finalized:false,ticket_status:"Approved (4/5)",ticket_owner:""},
+{name:"Karan Ale Magar",customer:"Yango Delivery Global FZ. LLC",project:"Eats",country:"Nepal",last_date:"2026-08-11",reason:"Dismissal",category:"Despido",status:"En proceso",finalized:false,ticket_status:"Approved (4/5)",ticket_owner:""},
 {name:"Sirjan Kumar Shahi",customer:"Yango Delivery Global FZ. LLC",project:"Eats",country:"Nepal",last_date:"2026-08-11",reason:"Dismissal",category:"Despido",status:"En proceso",finalized:false,ticket_status:"Requested (1/5)",ticket_owner:""},
 {name:"Abdul Rahman",customer:"Yango Delivery Global FZ. LLC",project:"Eats",country:"Pakistan",last_date:"2026-08-27",reason:"Dismissal",category:"Despido",status:"En proceso",finalized:false,ticket_status:"Requested (1/5)",ticket_owner:""},
-{name:"Júlia de Almeida Medeiros",customer:"FESCO PERSONNEL HK CO LIMITED",project:"Mixue",country:"Brazil",last_date:"2026-08-05",reason:"Resignation",category:"Renuncia",status:"En proceso",finalized:false,ticket_status:"Approved (4/5)",ticket_owner:""},
 {name:"Gabriela Victoria Lara Planchart",customer:"Ridetechnology Global FZ. LLC",project:"Taxi",country:"Venezuela",last_date:"2026-08-31",reason:"Other",category:"Renuncia",status:"En proceso",finalized:false,ticket_status:"Approved (4/5)",ticket_owner:"Guadalupe Salazar"},
-{name:"Anne Yin Li Wang",customer:"FESCO PERSONNEL HK CO LIMITED",project:"Mixue",country:"Brazil",last_date:"2026-08-05",reason:"Resignation",category:"Renuncia",status:"En proceso",finalized:false,ticket_status:"Approved (4/5)",ticket_owner:""},
-{name:"Zhiyu Hu",customer:"Fesco Adecco Human Resources Service Shanghai Co",project:"Amperex Techology Co.. Limited CATL",country:"Mexico",last_date:"2026-08-04",reason:"Resignation",category:"Renuncia",status:"En proceso",finalized:false,ticket_status:"Calculation in revision (3/5)",ticket_owner:""},
-{name:"Jacqueline Meei Jy Chen",customer:"FESCO PERSONNEL HK CO LIMITED",project:"Mixue",country:"Brazil",last_date:"2026-08-05",reason:"Resignation",category:"Renuncia",status:"En proceso",finalized:false,ticket_status:"Approved (4/5)",ticket_owner:""},
+{name:"Zhiyu Hu",customer:"Fesco Adecco Human Resources Service Shanghai Co",project:"Amperex Techology Co.. Limited CATL",country:"Mexico",last_date:"2026-08-04",reason:"Resignation",category:"Renuncia",status:"En proceso",finalized:false,ticket_status:"Approved (4/5)",ticket_owner:""},
 {name:"Kevin Mark Ruddock",customer:"EOS",project:"ZS Associates",country:"Jamaica",last_date:"2026-08-31",reason:"Labor Contract Not Renewed",category:"Despido",status:"En proceso",finalized:false,ticket_status:"Approved (4/5)",ticket_owner:"Emilio Morales"},
 {name:"Simon Tian Yu Wang",customer:"FESCO PERSONNEL HK CO LIMITED",project:"Mixue",country:"Brazil",last_date:"2026-08-05",reason:"Resignation",category:"Renuncia",status:"En proceso",finalized:false,ticket_status:"Approved (4/5)",ticket_owner:""},
 {name:"Jairo Alberto Cossio Mesa",customer:"Horizons Global Technology Pte Ltd",project:"Jiangsu Shemar",country:"Peru",last_date:"2026-08-15",reason:"Dismissal",category:"Despido",status:"En proceso",finalized:false,ticket_status:"Approved (4/5)",ticket_owner:""},
+{name:"Alicia Latoya Hassock",customer:"Oyster",project:"Arise Virtual Solutions Inc.",country:"Jamaica",last_date:"2026-09-15",reason:"Dismissal",category:"Despido",status:"En proceso",finalized:false,ticket_status:"Requested (1/5)",ticket_owner:""},
 {name:"Bigyan Pandey",customer:"Yango Delivery Global FZ. LLC",project:"Eats",country:"Nepal",last_date:"2026-07-30",reason:"Resignation",category:"Renuncia",status:"En proceso",finalized:false,ticket_status:"Approved (4/5)",ticket_owner:""},
-{name:"Ernesto Montañez Meza",customer:"Listo Global. Inc.",project:"Mercans",country:"Mexico",last_date:"2026-08-05",reason:"Resignation",category:"Renuncia",status:"En proceso",finalized:false,ticket_status:"Requested (1/5)",ticket_owner:""},
+{name:"Ernesto Montañez Meza",customer:"Listo Global. Inc.",project:"Mercans",country:"Mexico",last_date:"2026-08-05",reason:"Resignation",category:"Renuncia",status:"En proceso",finalized:false,ticket_status:"Calculation in revision (3/5)",ticket_owner:""},
 {name:"Juan Carlos Alvarado Ortiz",customer:"AFORZA LIMITED",project:"Aforza Limited",country:"Mexico",last_date:"2026-08-25",reason:"Labor Contract Not Renewed",category:"Despido",status:"En proceso",finalized:false,ticket_status:"Approved (4/5)",ticket_owner:"Cesar Olvera"},
 {name:"Oscar Pereira Castro",customer:"Accela Inc",project:"Accela Inc",country:"Costa Rica",last_date:"2026-08-31",reason:"Client opening own entity (transfer)",category:"Cliente abre entidad",status:"En proceso",finalized:false,ticket_status:"Approved (4/5)",ticket_owner:"Paulina Fibela"},
 {name:"Ricardo Daniel Loaiza Rojas",customer:"Accela Inc",project:"Accela Inc",country:"Costa Rica",last_date:"2026-08-31",reason:"Client opening own entity (transfer)",category:"Cliente abre entidad",status:"En proceso",finalized:false,ticket_status:"Approved (4/5)",ticket_owner:"Paulina Fibela"},
-{name:"Carolina Chacon Chinchilla",customer:"Accela Inc",project:"Accela Inc",country:"Costa Rica",last_date:"2026-08-31",reason:"Client opening own entity (transfer)",category:"Cliente abre entidad",status:"En proceso",finalized:false,ticket_status:"Approved (4/5)",ticket_owner:"Paulina Fibela"},
 {name:"Diego Humberto Mendez Rodriguez",customer:"Accela Inc",project:"Accela Inc",country:"Costa Rica",last_date:"2026-08-31",reason:"Client opening own entity (transfer)",category:"Cliente abre entidad",status:"En proceso",finalized:false,ticket_status:"Approved (4/5)",ticket_owner:"Paulina Fibela"},
 {name:"Edson Otoniel Zelaya Madrid",customer:"Accela Inc",project:"Accela Inc",country:"Costa Rica",last_date:"2026-08-31",reason:"Client opening own entity (transfer)",category:"Cliente abre entidad",status:"En proceso",finalized:false,ticket_status:"Approved (4/5)",ticket_owner:"Paulina Fibela"},
 {name:"Daniel Guerrero Delgado",customer:"Accela Inc",project:"Accela Inc",country:"Costa Rica",last_date:"2026-08-31",reason:"Client opening own entity (transfer)",category:"Cliente abre entidad",status:"En proceso",finalized:false,ticket_status:"Approved (4/5)",ticket_owner:"Paulina Fibela"},
-{name:"Jean Pablo Sedo Mejia",customer:"Accela Inc",project:"Accela Inc",country:"Costa Rica",last_date:"2026-08-31",reason:"Client opening own entity (transfer)",category:"Cliente abre entidad",status:"En proceso",finalized:false,ticket_status:"Calculation in revision (3/5)",ticket_owner:"Paulina Fibela"},
+{name:"Jean Pablo Sedo Mejia",customer:"Accela Inc",project:"Accela Inc",country:"Costa Rica",last_date:"2026-08-31",reason:"Client opening own entity (transfer)",category:"Cliente abre entidad",status:"En proceso",finalized:false,ticket_status:"Approved (4/5)",ticket_owner:"Paulina Fibela"},
 {name:"Angelica De Los Angeles Fallas Blanco",customer:"Accela Inc",project:"Accela Inc",country:"Costa Rica",last_date:"2026-08-31",reason:"Client opening own entity (transfer)",category:"Cliente abre entidad",status:"En proceso",finalized:false,ticket_status:"Approved (4/5)",ticket_owner:"Paulina Fibela"},
 {name:"Kenneth Antonio Alfaro Bogantes",customer:"Accela Inc",project:"Accela Inc",country:"Costa Rica",last_date:"2026-08-31",reason:"Client opening own entity (transfer)",category:"Cliente abre entidad",status:"En proceso",finalized:false,ticket_status:"Approved (4/5)",ticket_owner:"Paulina Fibela"},
 {name:"María Fernanda Araya Alpizar",customer:"Accela Inc",project:"Accela Inc",country:"Costa Rica",last_date:"2026-08-31",reason:"Client opening own entity (transfer)",category:"Cliente abre entidad",status:"En proceso",finalized:false,ticket_status:"Approved (4/5)",ticket_owner:"Paulina Fibela"},
-{name:"Francisco Marco Mendez Escobedo",customer:"Accela Inc",project:"Accela Inc",country:"Costa Rica",last_date:"2026-08-31",reason:"Client opening own entity (transfer)",category:"Cliente abre entidad",status:"En proceso",finalized:false,ticket_status:"Calculation in revision (3/5)",ticket_owner:"Paulina Fibela"},
-{name:"Roger Rafael Rivera Baez",customer:"Accela Inc",project:"Accela Inc",country:"Costa Rica",last_date:"2026-08-21",reason:"Dismissal",category:"Despido",status:"En proceso",finalized:false,ticket_status:"Approved (4/5)",ticket_owner:"Paulina Fibela"},
+{name:"Francisco Marco Mendez Escobedo",customer:"Accela Inc",project:"Accela Inc",country:"Costa Rica",last_date:"2026-08-31",reason:"Client opening own entity (transfer)",category:"Cliente abre entidad",status:"En proceso",finalized:false,ticket_status:"Approved (4/5)",ticket_owner:"Paulina Fibela"},
 {name:"Ariel Andrey Valverde Mora",customer:"Accela Inc",project:"Accela Inc",country:"Costa Rica",last_date:"2026-08-31",reason:"Client opening own entity (transfer)",category:"Cliente abre entidad",status:"En proceso",finalized:false,ticket_status:"Approved (4/5)",ticket_owner:"Paulina Fibela"},
 {name:"Jermy David Calvo Parra",customer:"Accela Inc",project:"Accela Inc",country:"Costa Rica",last_date:"2026-08-31",reason:"Client opening own entity (transfer)",category:"Cliente abre entidad",status:"En proceso",finalized:false,ticket_status:"Approved (4/5)",ticket_owner:"Paulina Fibela"},
 {name:"Josue Daniel Bolanos Carit",customer:"Accela Inc",project:"Accela Inc",country:"Costa Rica",last_date:"2026-08-31",reason:"Client opening own entity (transfer)",category:"Cliente abre entidad",status:"En proceso",finalized:false,ticket_status:"Approved (4/5)",ticket_owner:"Paulina Fibela"},
-{name:"Oscar Mario Alvarado Gutierrez",customer:"Accela Inc",project:"Accela Inc",country:"Costa Rica",last_date:"2026-08-21",reason:"Dismissal",category:"Despido",status:"En proceso",finalized:false,ticket_status:"Approved (4/5)",ticket_owner:"Paulina Fibela"},
 {name:"Jose Daniel Amador Salas",customer:"Accela Inc",project:"Accela Inc",country:"Costa Rica",last_date:"2026-08-31",reason:"Client opening own entity (transfer)",category:"Cliente abre entidad",status:"En proceso",finalized:false,ticket_status:"Approved (4/5)",ticket_owner:"Paulina Fibela"},
 {name:"Kevin Francisco Jimenez Garro",customer:"Accela Inc",project:"Accela Inc",country:"Costa Rica",last_date:"2026-08-31",reason:"Client opening own entity (transfer)",category:"Cliente abre entidad",status:"En proceso",finalized:false,ticket_status:"Approved (4/5)",ticket_owner:"Paulina Fibela"},
-{name:"Carlos Chanto Hernandez",customer:"Accela Inc",project:"Accela Inc",country:"Costa Rica",last_date:"2026-08-21",reason:"Dismissal",category:"Despido",status:"En proceso",finalized:false,ticket_status:"Approved (4/5)",ticket_owner:"Paulina Fibela"},
 {name:"Diego Alonso Espinoza Sanchez",customer:"Accela Inc",project:"Accela Inc",country:"Costa Rica",last_date:"2026-08-31",reason:"Client opening own entity (transfer)",category:"Cliente abre entidad",status:"En proceso",finalized:false,ticket_status:"Approved (4/5)",ticket_owner:"Paulina Fibela"},
 {name:"Geancarlo Solano Quiros",customer:"Accela Inc",project:"Accela Inc",country:"Costa Rica",last_date:"2026-08-31",reason:"Client opening own entity (transfer)",category:"Cliente abre entidad",status:"En proceso",finalized:false,ticket_status:"Approved (4/5)",ticket_owner:"Paulina Fibela"},
-{name:"Fernando Andre Binda Sanchez",customer:"Accela Inc",project:"Accela Inc",country:"Costa Rica",last_date:"2026-08-31",reason:"Client opening own entity (transfer)",category:"Cliente abre entidad",status:"En proceso",finalized:false,ticket_status:"Calculation in revision (3/5)",ticket_owner:"Paulina Fibela"},
-{name:"Claudio Valentin Andrade Gonzalez",customer:"Accela Inc",project:"Accela Inc",country:"Costa Rica",last_date:"2026-08-21",reason:"Dismissal",category:"Despido",status:"En proceso",finalized:false,ticket_status:"Approved (4/5)",ticket_owner:"Paulina Fibela"},
+{name:"Fernando Andre Binda Sanchez",customer:"Accela Inc",project:"Accela Inc",country:"Costa Rica",last_date:"2026-08-31",reason:"Client opening own entity (transfer)",category:"Cliente abre entidad",status:"En proceso",finalized:false,ticket_status:"Approved (4/5)",ticket_owner:"Paulina Fibela"},
 {name:"Francois Verhoef",customer:"Circles Life Asia Technology Pte. Ltd.",project:"AT&T Mexico",country:"Mexico",last_date:"2026-08-31",reason:"Dismissal",category:"Despido",status:"En proceso",finalized:false,ticket_status:"Approved (4/5)",ticket_owner:""},
-{name:"Syed Shahzaib Hassan",customer:"Yango",project:"Eats",country:"Pakistan",last_date:"2026-07-27",reason:"Other",category:"Renuncia",status:"En proceso",finalized:false,ticket_status:"Calculation in progress (2/5)",ticket_owner:""},
+{name:"Syed Shahzaib Hassan",customer:"Yango",project:"Eats",country:"Pakistan",last_date:"2026-07-27",reason:"Other",category:"Renuncia",status:"En proceso",finalized:false,ticket_status:"Approved (4/5)",ticket_owner:""},
 {name:"Li Wang",customer:"Iflight Technology Co.. Ltd",project:"Iflight Technology Co.. Ltd",country:"Mexico",last_date:"2026-08-14",reason:"Resignation",category:"Renuncia",status:"En proceso",finalized:false,ticket_status:"Approved (4/5)",ticket_owner:""},
 {name:"Maria Fernanda Jauregui Gomez",customer:"TickPick LLC",project:"TickPick LLC",country:"Mexico",last_date:"2026-08-07",reason:"Resignation",category:"Renuncia",status:"En proceso",finalized:false,ticket_status:"Approved (4/5)",ticket_owner:""},
 {name:"Anastasia Dashkevich",customer:"Ridetechnology Global FZ. LLC",project:"Taxi",country:"Chile",last_date:"2026-07-31",reason:"Resignation",category:"Renuncia",status:"En proceso",finalized:false,ticket_status:"Approved (4/5)",ticket_owner:"Emilio Morales"},
-{name:"Martha Josefina Torices Saldaña",customer:"Remofirst",project:"Remofirst",country:"Mexico",last_date:"2026-07-31",reason:"Resignation",category:"Renuncia",status:"En proceso",finalized:false,ticket_status:"Approved (4/5)",ticket_owner:""},
-{name:"Meng Chao",customer:"Iflight",project:"Iflight Technology Co.. Ltd",country:"Mexico",last_date:"2026-08-10",reason:"Resignation",category:"Renuncia",status:"En proceso",finalized:false,ticket_status:"Approved (4/5)",ticket_owner:""},
-{name:"Marco Tulio Villalobos Martinez",customer:"Circles Life Asia Technology Pte. Ltd.",project:"AT&T Mexico",country:"Mexico",last_date:"2026-08-04",reason:"Dismissal",category:"Despido",status:"En proceso",finalized:false,ticket_status:"Approved (4/5)",ticket_owner:""},
-{name:"Carol Cristel Castillo Pinto",customer:"Color Brands",project:"Color Brands",country:"Chile",last_date:"2026-07-30",reason:"Dismissal",category:"Despido",status:"En proceso",finalized:false,ticket_status:"Calculation in revision (3/5)",ticket_owner:"Emilio Morales"},
 {name:"Amanda Cox",customer:"Globalization Partners Llc",project:"University Support Services",country:"Barbados",last_date:"2026-07-31",reason:"Resignation",category:"Renuncia",status:"En proceso",finalized:false,ticket_status:"Approved (4/5)",ticket_owner:""},
 {name:"Alexandros Gouniotis",customer:"MC1",project:"Europe Expansion",country:"Greece",last_date:"2026-07-03",reason:"Resignation",category:"Renuncia",status:"En proceso",finalized:false,ticket_status:"Approved (4/5)",ticket_owner:""},
-{name:"Dan Ivan Guillen Espinosa",customer:"CDP",project:"Shan tui",country:"Mexico",last_date:"2026-08-31",reason:"Dismissal",category:"Despido",status:"En proceso",finalized:false,ticket_status:"Calculation in revision (3/5)",ticket_owner:""},
+{name:"Dan Ivan Guillen Espinosa",customer:"CDP",project:"Shan tui",country:"Mexico",last_date:"2026-08-31",reason:"Dismissal",category:"Despido",status:"En proceso",finalized:false,ticket_status:"Approved (4/5)",ticket_owner:""},
 {name:"Natali De Los Angeles Arias Jaramillo",customer:"Multiplier Technologies Pte. Ltd",project:"Aspire Systems",country:"Ecuador",last_date:"2026-07-03",reason:"Resignation",category:"Renuncia",status:"En proceso",finalized:false,ticket_status:"Approved (4/5)",ticket_owner:""},
 {name:"Isabella Cristina Oropeza Feo",customer:"",project:"Other (clone)",country:"Venezuela",last_date:"2026-08-04",reason:"",category:"Renuncia",status:"En proceso",finalized:false,ticket_status:"Approved (4/5)",ticket_owner:"Guadalupe Salazar"},
 {name:"Gabriela Victoria Lara Planchart, Isabella Cristina Oropeza Feo, Maria Eugenia Pereda Mata",customer:"Ridetechnology Global FZ. LLC",project:"Other",country:"Venezuela",last_date:"2026-06-30",reason:"Other",category:"Renuncia",status:"En proceso",finalized:false,ticket_status:"Approved (4/5)",ticket_owner:"Guadalupe Salazar"},
@@ -2365,7 +2398,7 @@ function exportCountryBalance() {
     '<Worksheet ss:Name="Balance por País">\n' +
     '<Table ss:ExpandedColumnCount="4">\n' +
     '  <Row><Cell ss:MergeAcross="3" ss:StyleID="ttl"><Data ss:Type="String">Balance HC por País — Serviap Global — ' + escX(today) + '</Data></Cell></Row>\n' +
-    '  <Row><Cell ss:MergeAcross="3" ss:StyleID="sub"><Data ss:Type="String">HC real al corte 18 Ago 2026 menos bajas en proceso del mes corriente</Data></Cell></Row>\n' +
+    '  <Row><Cell ss:MergeAcross="3" ss:StyleID="sub"><Data ss:Type="String">HC real al corte 31 Ago 2026 menos bajas en proceso del mes corriente</Data></Cell></Row>\n' +
     '  <Row/>\n' +
     '  <Row>' + cell('País','hdr') + cell('HC Actual (est.)','hdr') + cell('Bajas Pendientes','hdr') + cell('HC Proyectado','hdr') + '</Row>\n' +
     '  ' + dataRows + '\n' +
