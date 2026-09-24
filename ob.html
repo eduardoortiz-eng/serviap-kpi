@@ -128,7 +128,7 @@ tbody td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:t
 <!-- ═══════════ HEADER ═══════════ -->
 <header class="site-header">
   <h1>Onboardings &amp; Offboardings</h1>
-  <span class="header-badge">Corte: 31 Ago 2026 &nbsp;·&nbsp; 391 onboardings &nbsp;·&nbsp; 185 en proceso</span>
+  <span class="header-badge">Corte: 24 Sep 2026 &nbsp;·&nbsp; 391 onboardings &nbsp;·&nbsp; 185 en proceso</span>
 </header>
 
 <div class="container">
@@ -178,7 +178,7 @@ tbody td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:t
   ══════════════════════════════════════ -->
   <div class="view-panel active" id="view-general">
     <div class="kpi-row" id="gen-kpi-row">
-      <div class="kpi-card green"><div class="kpi-label">Activos</div><div class="kpi-value" id="kpi-activos">—</div><div class="kpi-sub">Al corte 31 Ago 2026</div></div>
+      <div class="kpi-card green"><div class="kpi-label">Activos</div><div class="kpi-value" id="kpi-activos">—</div><div class="kpi-sub">Al corte 24 Sep 2026</div></div>
       <div class="kpi-card med-green"><div class="kpi-label">Onboardings</div><div class="kpi-value" id="kpi-on">—</div><div class="kpi-sub" id="kpi-on-sub">Período seleccionado</div></div>
       <div class="kpi-card orange"><div class="kpi-label">Offboardings</div><div class="kpi-value" id="kpi-off">—</div><div class="kpi-sub" id="kpi-off-sub">Período seleccionado</div></div>
       <div class="kpi-card" id="kpi-neto-card"><div class="kpi-label">Neto</div><div class="kpi-value" id="kpi-neto">—</div><div class="kpi-sub">Ingresos − Bajas</div></div>
@@ -214,7 +214,7 @@ tbody td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:t
         <h3 style="margin:0">Balance de HC por País</h3>
         <button class="btn-export" onclick="exportCountryBalance()">&#11015; Exportar Excel</button>
       </div>
-      <p style="margin:0 0 10px;font-size:13px;color:#7B9674">HC real al corte 31 Ago 2026 menos bajas en proceso del mes corriente</p>
+      <p style="margin:0 0 10px;font-size:13px;color:#7B9674">HC real al corte 24 Sep 2026 menos bajas en proceso del mes corriente</p>
       <div class="table-wrap">
         <table id="tbl-hc-country">
           <thead><tr><th>País</th><th style="text-align:center">HC Actual (est.)</th><th style="text-align:center">Bajas Pendientes</th><th style="text-align:center">HC Proyectado</th></tr></thead>
@@ -2398,7 +2398,7 @@ function exportCountryBalance() {
     '<Worksheet ss:Name="Balance por País">\n' +
     '<Table ss:ExpandedColumnCount="4">\n' +
     '  <Row><Cell ss:MergeAcross="3" ss:StyleID="ttl"><Data ss:Type="String">Balance HC por País — Serviap Global — ' + escX(today) + '</Data></Cell></Row>\n' +
-    '  <Row><Cell ss:MergeAcross="3" ss:StyleID="sub"><Data ss:Type="String">HC real al corte 31 Ago 2026 menos bajas en proceso del mes corriente</Data></Cell></Row>\n' +
+    '  <Row><Cell ss:MergeAcross="3" ss:StyleID="sub"><Data ss:Type="String">HC real al corte 24 Sep 2026 menos bajas en proceso del mes corriente</Data></Cell></Row>\n' +
     '  <Row/>\n' +
     '  <Row>' + cell('País','hdr') + cell('HC Actual (est.)','hdr') + cell('Bajas Pendientes','hdr') + cell('HC Proyectado','hdr') + '</Row>\n' +
     '  ' + dataRows + '\n' +
