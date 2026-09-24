@@ -128,7 +128,7 @@ tbody td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:t
 <!-- ═══════════ HEADER ═══════════ -->
 <header class="site-header">
   <h1>Onboardings &amp; Offboardings</h1>
-  <span class="header-badge">Corte: 31 Ago 2026 &nbsp;·&nbsp; 391 onboardings &nbsp;·&nbsp; 185 en proceso</span>
+  <span class="header-badge">Corte: 24 Sep 2026 &nbsp;·&nbsp; 391 onboardings &nbsp;·&nbsp; 185 en proceso</span>
 </header>
 
 <div class="container">
@@ -178,7 +178,7 @@ tbody td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:t
   ══════════════════════════════════════ -->
   <div class="view-panel active" id="view-general">
     <div class="kpi-row" id="gen-kpi-row">
-      <div class="kpi-card green"><div class="kpi-label">Activos</div><div class="kpi-value" id="kpi-activos">—</div><div class="kpi-sub">Al corte 31 Ago 2026</div></div>
+      <div class="kpi-card green"><div class="kpi-label">Activos</div><div class="kpi-value" id="kpi-activos">—</div><div class="kpi-sub">Al corte 24 Sep 2026</div></div>
       <div class="kpi-card med-green"><div class="kpi-label">Onboardings</div><div class="kpi-value" id="kpi-on">—</div><div class="kpi-sub" id="kpi-on-sub">Período seleccionado</div></div>
       <div class="kpi-card orange"><div class="kpi-label">Offboardings</div><div class="kpi-value" id="kpi-off">—</div><div class="kpi-sub" id="kpi-off-sub">Período seleccionado</div></div>
       <div class="kpi-card" id="kpi-neto-card"><div class="kpi-label">Neto</div><div class="kpi-value" id="kpi-neto">—</div><div class="kpi-sub">Ingresos − Bajas</div></div>
@@ -214,7 +214,7 @@ tbody td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:t
         <h3 style="margin:0">Balance de HC por País</h3>
         <button class="btn-export" onclick="exportCountryBalance()">&#11015; Exportar Excel</button>
       </div>
-      <p style="margin:0 0 10px;font-size:13px;color:#7B9674">HC real al corte 31 Ago 2026 menos bajas en proceso del mes corriente</p>
+      <p style="margin:0 0 10px;font-size:13px;color:#7B9674">HC real al corte 24 Sep 2026 menos bajas en proceso del mes corriente</p>
       <div class="table-wrap">
         <table id="tbl-hc-country">
           <thead><tr><th>País</th><th style="text-align:center">HC Actual (est.)</th><th style="text-align:center">Bajas Pendientes</th><th style="text-align:center">HC Proyectado</th></tr></thead>
@@ -375,18 +375,30 @@ tbody td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:t
 ════════════════════════════════════════════ -->
 <script>
 const OB_DATA = [
-{name:"Felipe Vasconselos Lana",customer:"Rivermate B.V.",country:"Brazil",start_date:"2026-09-01",status:"En proceso",job:"Account Manager"},
-{name:"Rajan Lama",customer:"DIRECT CURSUS TECHNOLOGY L.L.C.",country:"Nepal",start_date:"2026-09-24",status:"En proceso",job:"Financial Controller"},
-{name:"Ali Imtisal Naqi",customer:"DIRECT CURSUS TECHNOLOGY L.L.C.",country:"Pakistan",start_date:"2026-09-03",status:"En proceso",job:"Support Manager"},
-{name:"Ali Shahid Hussain",customer:"DIRECT CURSUS TECHNOLOGY L.L.C.",country:"Pakistan",start_date:"2026-09-03",status:"En proceso",job:"Manager"},
-{name:"Alejandro Martínez Juárez",customer:"Line Up Limited",country:"Mexico",start_date:"2026-09-01",status:"En proceso",job:"Warranty Engineer (On-site Warranty Coordinator)"},
-{name:"Ricardo Humberto Delgado Cotreras",customer:"INS Global Limited",country:"Panama",start_date:"2026-09-28",status:"En proceso",job:"After-sales Service Engineer—Panama"},
-{name:"Bruno Leonardo River Zavala",customer:"CootaWork",country:"Mexico",start_date:"2026-09-07",status:"En proceso",job:"Cloud Service Engineer"},
-{name:"Laura Isabel Quiceno Cardenas",customer:"UniFirst Corporation",country:"Colombia",start_date:"2026-09-08",status:"En proceso",job:"Credit & Collections Analyst I"},
-{name:"Edgar Omar Miranda Aranda",customer:"RIVERMATE B.V.",country:"Mexico",start_date:"2026-09-01",status:"En proceso",job:"Senior Data Engineer"},
-{name:"Jose Felix Quintero Aguilar",customer:"Oyster. HR Inc.",country:"Panama",start_date:"2026-09-30",status:"En proceso",job:"Senior GRC Analyst I"},
-{name:"Daniella Alexandra Ramos Juliao",customer:"Oyster. HR Inc.",country:"Panama",start_date:"2026-09-30",status:"En proceso",job:"Senior GRC Analyst I"},
-{name:"Kishor Kamble",customer:"Yango Delivery Global FZ. LLC",country:"India",start_date:"2026-08-25",status:"En proceso",job:"Partner support manager"},
+{name:"Pedro Tribst",customer:"FESCO PERSONNEL HK CO LIMITED",country:"Brazil",start_date:"2026-10-26",status:"En proceso",job:"Senior Business Development Specialist"},
+{name:"Hassan Zaman",customer:"Ridetechnology Global FZ. LLC",country:"Pakistan",start_date:"2026-10-01",status:"En proceso",job:"Sales Manager"},
+{name:"Roxanna Ornella Antoinette",customer:"Oyster. HR Inc.",country:"Jamaica",start_date:"2026-10-01",status:"En proceso",job:"Learning Delivery Manager"},
+{name:"Walter Alonso Trujillo Escobar",customer:"Peak PEO Limited",country:"El Salvador",start_date:"2026-10-01",status:"En proceso",job:"Head of Powerplant"},
+{name:"Marco Antonio Brea Kavasila",customer:"Oyster. HR Inc.",country:"Panama",start_date:"2026-09-21",status:"Completado",job:"Regional Sales Manager, Latin America"},
+{name:"Humna Asif",customer:"DIRECT CURSUS TECHNOLOGY L.L.C.",country:"Pakistan",start_date:"2026-10-05",status:"En proceso",job:"Sales manager"},
+{name:"Jassiel Uldarico Fiol Becheret",customer:"AFORZA LIMITED",country:"Mexico",start_date:"2026-10-01",status:"Completado",job:"Managed Services Consultant"},
+{name:"Ayesha Tariq",customer:"DIRECT CURSUS TECHNOLOGY L.L.C.",country:"Pakistan",start_date:"2026-09-10",status:"Completado",job:"Sales manager"},
+{name:"Bárbara Mariño Dal Magro",customer:"Rivermate B.V.",country:"Brazil",start_date:"2026-10-01",status:"Completado",job:"Site Services Specialist"},
+{name:"Alissa Lisboa",customer:"Peak PEO Limited",country:"Brazil",start_date:"2026-09-15",status:"Completado",job:"Business Development Manager"},
+{name:"Gustavo Adolfo Villegas Boyoli",customer:"FESCO PERSONNEL HK CO LIMITED",country:"Mexico",start_date:"2026-10-05",status:"Completado",job:"Senior ESS O&amp;M Sales Engineer"},
+{name:"Hammad Ahmed",customer:"DIRECT CURSUS TECHNOLOGY L.L.C.",country:"Pakistan",start_date:"2026-09-08",status:"Completado",job:"Software Engineer"},
+{name:"Felipe Vasconselos Lana",customer:"Payinone Llc",country:"Brazil",start_date:"2026-09-09",status:"Completado",job:"Account Manager"},
+{name:"Rajan Lama",customer:"DIRECT CURSUS TECHNOLOGY L.L.C.",country:"Nepal",start_date:"2026-10-01",status:"Completado",job:"Financial Controller"},
+{name:"Ali Imtisal Naqi",customer:"DIRECT CURSUS TECHNOLOGY L.L.C.",country:"Pakistan",start_date:"2026-09-03",status:"Completado",job:"Support Manager"},
+{name:"Ali Shahid Hussain",customer:"DIRECT CURSUS TECHNOLOGY L.L.C.",country:"Pakistan",start_date:"2026-09-03",status:"Completado",job:"Manager"},
+{name:"Alejandro Martínez Juárez",customer:"Line Up Limited",country:"Mexico",start_date:"2026-09-07",status:"Completado",job:"Warranty Engineer (On-site Warranty Coordinator)"},
+{name:"Ricardo Humberto Delgado Cotreras",customer:"INS Global Limited",country:"Panama",start_date:"2026-10-05",status:"Completado",job:"After-sales Service Engineer—Panama"},
+{name:"Bruno Leonardo Rivera Zavala",customer:"CootaWork",country:"Mexico",start_date:"2026-09-07",status:"Completado",job:"Cloud Service Engineer"},
+{name:"Laura Isabel Quiceno Cardenas",customer:"UniFirst Corporation",country:"Colombia",start_date:"2026-09-08",status:"Completado",job:"Credit & Collections Analyst I"},
+{name:"Edgar Omar Miranda Aranda",customer:"RIVERMATE B.V.",country:"Mexico",start_date:"2026-09-14",status:"Completado",job:"Senior Data Engineer"},
+{name:"Jose Felix Quintero Aguilar",customer:"Oyster. HR Inc.",country:"Panama",start_date:"2026-09-30",status:"Completado",job:"Senior GRC Analyst I"},
+{name:"Daniella Alexandra Ramos Juliao",customer:"Oyster. HR Inc.",country:"Panama",start_date:"2026-09-30",status:"Completado",job:"Senior GRC Analyst I"},
+{name:"Kishor Sonba Kamble",customer:"Yango Delivery Global FZ. LLC",country:"India",start_date:"2026-08-25",status:"Completado",job:"Partner support manager"},
 {name:"Anish Basnet",customer:"Yango Delivery Global FZ. LLC",country:"Nepal",start_date:"2026-09-01",status:"Completado",job:"Quality control specialist"},
 {name:"César Dragunsky",customer:"RIVERMATE B.V.",country:"Mexico",start_date:"2026-09-01",status:"En proceso",job:"Staff Software Engineer"},
 {name:"Stefanne Maria Jeha Bortoletto",customer:"RIVERMATE B.V.",country:"Brazil",start_date:"2026-09-01",status:"Completado",job:"Site Services Specialist"},
@@ -401,7 +413,7 @@ const OB_DATA = [
 {name:"Jennifer Yannine Vélez Pantoja",customer:"UniFirst Corporation",country:"Colombia",start_date:"2026-08-21",status:"Completado",job:"Credit & Collections Analyst I"},
 {name:"Bipasha Sharma",customer:"Yango Delivery Global FZ. LLC",country:"Nepal",start_date:"2026-08-10",status:"Completado",job:"Quality control specialist"},
 {name:"Sheneka Rushell Bryan Byfield",customer:"Oyster. HR Inc.",country:"Jamaica",start_date:"2026-08-04",status:"Completado",job:"Performance Excellence Manager"},
-{name:"Mónica Alexandra Oliveros Guerrero",customer:"Horizons Global Technology Pte Ltd",country:"Guatemala",start_date:"2026-08-08",status:"En proceso",job:"Corporate Key Account Manager"},
+{name:"Mónica Alexandra Oliveros Guerrero",customer:"Horizons Global Technology Pte Ltd",country:"Guatemala",start_date:"2026-07-01",status:"Completado",job:"Corporate Key Account Manager"},
 {name:"Daniela Alejandra Araya Segura",customer:"FESCO PERSONNEL HK CO LIMITED",country:"Costa Rica",start_date:"2026-08-10",status:"Completado",job:"Sales Manager"},
 {name:"Huang Xiangxun",customer:"Ideal-careerbridge Holdings (hk) Limited",country:"Colombia",start_date:"2026-09-15",status:"En proceso",job:"Product Manager"},
 {name:"Andres Cathey Cevallos",customer:"Horizons Global Technology Pte Ltd",country:"Ecuador",start_date:"2026-11-16",status:"Completado",job:"Edge Plasma Physicist"},
@@ -409,7 +421,7 @@ const OB_DATA = [
 {name:"Suelle Shanique Anglin",customer:"Oyster. HR Inc.",country:"Jamaica",start_date:"2026-09-01",status:"En proceso",job:"Communications Specialist"},
 {name:"Sudip Luitel",customer:"Yango Delivery Global FZ. LLC",country:"Nepal",start_date:"2026-08-03",status:"Completado",job:"Sales Manager"},
 {name:"Dikshya Mahat",customer:"Yango Delivery Global FZ. LLC",country:"Nepal",start_date:"2026-08-03",status:"Completado",job:"Customer Support Specialist"},
-{name:"Marcelo Pablo Squillario",customer:"INS Global Limited",country:"Argentina",start_date:"2026-09-01",status:"En proceso",job:"Latin America Sales"},
+{name:"Marcelo Pablo Squillario",customer:"INS Global Limited",country:"Argentina",start_date:"2026-09-14",status:"En proceso",job:"Latin America Sales"},
 {name:"Usama Bin Zubair",customer:"DIRECT CURSUS TECHNOLOGY L.L.C.",country:"Pakistan",start_date:"2026-08-04",status:"Completado",job:"Sales Manager for corporate clients"},
 {name:"Zulima Moreno Bedoya",customer:"UniFirst Corporation",country:"Colombia",start_date:"2026-08-03",status:"Completado",job:"Talent Acquisition Specialist"},
 {name:"Valentina Arce",customer:"Neeyamo. Inc",country:"Argentina",start_date:"2026-08-06",status:"Completado",job:"Developer Engagement Representative"},
@@ -467,6 +479,7 @@ const OB_DATA = [
 {name:"Eliseo Huang",customer:"Horizons Global Technology Pte Ltd",country:"Panama",start_date:"2026-08-10",status:"Completado",job:": Solution Engineer (LATAM)"},
 {name:"Rojina Thapa",customer:"Yango Delivery Global FZ. LLC",country:"Nepal",start_date:"2026-07-08",status:"Completado",job:"Customer Support Specialist"},
 {name:"Ritesh Maharjan",customer:"Yango Delivery Global FZ. LLC",country:"Nepal",start_date:"2026-07-08",status:"Completado",job:"Customer Support Specialist"},
+{name:"Luis Alberto Loja Portocarrero",customer:"RIVERMATE B.V.",country:"Peru",start_date:"2026-09-07",status:"Completado",job:"Business Development Manager"},
 {name:"Edgar Manuel Sandoval Contreras",customer:"Gonex International technology(HK)Co., Limited",country:"Mexico",start_date:"2026-07-01",status:"Completado",job:"Technical Support Engineer"},
 {name:"Usman Ghani",customer:"Yango Delivery Global FZ. LLC",country:"Pakistan",start_date:"2026-07-01",status:"Completado",job:"Sales Manager"},
 {name:"Muhammad Ali Zahid",customer:"Yango Delivery Global FZ. LLC",country:"Pakistan",start_date:"2026-07-08",status:"Completado",job:"Key Accounts Expert"},
@@ -501,7 +514,7 @@ const OB_DATA = [
 {name:"Muhammad Awais",customer:"Yango Delivery Global FZ. LLC",country:"Pakistan",start_date:"2026-07-01",status:"Completado",job:"Customer Support Specialist"},
 {name:"Aliza Raza",customer:"Yango Delivery Global FZ. LLC",country:"Pakistan",start_date:"2026-07-01",status:"Completado",job:"Customer Support Specialist"},
 {name:"Syed Muhammad Mohsin Jilani",customer:"Yango Delivery Global FZ. LLC",country:"Pakistan",start_date:"2026-07-01",status:"Completado",job:"Customer Support Specialist"},
-{name:"María José Salazar Londoño",customer:"RIVERMATE B.V.",country:"Colombia",start_date:"2026-09-02",status:"En proceso",job:"Senior Researcher"},
+{name:"María José Salazar Londoño",customer:"RIVERMATE B.V.",country:"Colombia",start_date:"2026-10-01",status:"Completado",job:"Senior Researcher"},
 {name:"Chia Kok Hee",customer:"AFORZA LIMITED",country:"Malaysia",start_date:"2026-06-15",status:"Completado",job:"Senior Project Manager"},
 {name:"Muhammad Ahad Butt",customer:"Yango Delivery Global FZ. LLC",country:"Pakistan",start_date:"2026-07-01",status:"Completado",job:"Sales Manager"},
 {name:"Anas Ali",customer:"Yango Delivery Global FZ. LLC",country:"Pakistan",start_date:"2026-07-01",status:"Completado",job:"Operator"},
@@ -584,8 +597,7 @@ const OB_DATA = [
 {name:"Tibhesh Lamichhane",customer:"Yango Delivery Global FZ. LLC",country:"Nepal",start_date:"2026-06-01",status:"Completado",job:"Retouch specialist"},
 {name:"Yash Raj Sunar",customer:"Yango Delivery Global FZ. LLC",country:"Nepal",start_date:"2026-06-01",status:"Completado",job:"Retouch specialist"},
 {name:"HAOYU YAN",customer:"Iflight Technology Co.. Ltd",country:"Brazil",start_date:"2026-08-01",status:"En proceso",job:"Sales specialist"},
-{name:"ZHIQIANG DAI",customer:"Iflight Technology Co.. Ltd",country:"Brazil",start_date:"2026-08-01",status:"En proceso",job:"Sales specialist"},
-{name:"MING CHEN",customer:"Iflight Technology Co.. Ltd",country:"Brazil",start_date:"2026-08-01",status:"En proceso",job:"Sales specialist"},
+{name:"ZHIQIANG DAI",customer:"Iflight Technology Co.. Ltd",country:"Brazil",start_date:"2026-10-01",status:"En proceso",job:"Sales specialist"},
 {name:"Fatima Afzal",customer:"Yango Delivery Global FZ. LLC",country:"Pakistan",start_date:"2026-06-01",status:"Completado",job:"Customer Support Specialist"},
 {name:"Um E Naz",customer:"Yango Delivery Global FZ. LLC",country:"Pakistan",start_date:"2026-06-01",status:"Completado",job:"Customer Support Specialist"},
 {name:"Zeeshan Ijaz",customer:"Yango Delivery Global FZ. LLC",country:"Pakistan",start_date:"2026-06-01",status:"Completado",job:"Customer Support Specialist"},
@@ -629,7 +641,7 @@ const OB_DATA = [
 {name:"Muhammad Usman Arif",customer:"Yango Delivery Global FZ. LLC",country:"Pakistan",start_date:"2026-05-11",status:"Completado",job:"Support Manager"},
 {name:"Eduardo Arrieta Maza",customer:"Hotel Rehabs LLC",country:"Mexico",start_date:"2026-05-11",status:"Completado",job:"Project Designer"},
 {name:"Alejandro Restrepo Naranjo",customer:"Gonex International technology(HK)Co., Limited",country:"Colombia",start_date:"2026-06-01",status:"Completado",job:"Gerente de desarrollo para Centro y Sudamerica"},
-{name:"XIANGPU ZHAO",customer:"Iflight Technology Co.. Ltd",country:"Brazil",start_date:"2026-07-01",status:"En proceso",job:"Sales specialist"},
+{name:"XIANGPU ZHAO",customer:"Iflight Technology Co.. Ltd",country:"Brazil",start_date:"2026-11-03",status:"En proceso",job:"Sales specialist"},
 {name:"Iasmin Pieratti Carneiro",customer:"MAST-JÄGERMEISTER SE",country:"Brazil",start_date:"2026-05-11",status:"Completado",job:"Embaixador On-trade e Eventos"},
 {name:"Gabriel Rafael De Obarrio Moreno",customer:"INS Global Limited",country:"Panama",start_date:"2026-05-14",status:"Completado",job:"Sales Manager"},
 {name:"Nihha Maryah Nawaz",customer:"Yango Delivery Global FZ. LLC",country:"Pakistan",start_date:"2026-05-04",status:"Completado",job:"Content Marketing Specialist"},
@@ -785,7 +797,74 @@ const OB_DATA = [
 {name:"Darion Jairam",customer:"Horizons Global Technology Pte Ltd",country:"Trinidad and Tobago",start_date:"2026-02-01",status:"Completado",job:"Trade Marketing Manager"},
 {name:"Gustavo Alex Valdivieso Torrez",customer:"Horizons Global Technology Pte Ltd",country:"Bolivia",start_date:"2026-03-02",status:"Completado",job:"Site Operations Lead"},
 {name:"David Alejandro Beltran Gutierrez",customer:"Grok Global Services, Inc",country:"Colombia",start_date:"2026-01-16",status:"Completado",job:"International Regional Manager"},
-{name:"Sharon Ramos Almeida",customer:"RIVERMATE B.V.",country:"Brazil",start_date:"2026-01-16",status:"Completado",job:"Site Services Specialist"}
+{name:"Sharon Ramos Almeida",customer:"RIVERMATE B.V.",country:"Brazil",start_date:"2026-01-16",status:"Completado",job:"Site Services Specialist"},
+{name:"Luis Jesus Augusto Padilla Gil",customer:"UniFirst Corporation",country:"Colombia",start_date:"2026-01-19",status:"Completado",job:"Application Support Engineer"},
+{name:"Amanda Cox",customer:"Globalization Partners Llc",country:"Barbados",start_date:"2026-01-12",status:"Completado",job:"Regional Manager, International Student Recruitment, Caribbean"},
+{name:"Daniel Sánchez Díaz",customer:"FESCO PERSONNEL HK CO LIMITED",country:"Spain",start_date:"2026-01-07",status:"Completado",job:"Technical Support Manager"},
+{name:"Angel Esteban Gurrola Santana",customer:"Cdp Group (hong Kong) Limited",country:"Mexico",start_date:"2026-01-06",status:"Completado",job:"Technical Service Engineer"},
+{name:"Carlos Andres Perez Agudelo",customer:"UniFirst Corporation",country:"Colombia",start_date:"2026-01-13",status:"Completado",job:"Service Desk Technician"},
+{name:"Carlos Federico Ramirez Baez",customer:"Horizons Global Technology Pte Ltd",country:"Paraguay",start_date:"2026-01-12",status:"Completado",job:"Business Consultant-Technical Sales"},
+{name:"Liwei Liu",customer:"Iflight Technology Co.. Ltd",country:"Brazil",start_date:"2026-08-03",status:"Completado",job:"Sales specialist"},
+{name:"Daniel Lopez Dias",customer:"FESCO PERSONNEL HK CO LIMITED",country:"Brazil",start_date:"2026-01-19",status:"Completado",job:"Country Manager"},
+{name:"Ziqin Zhou",customer:"Iflight Technology Co.. Ltd",country:"Brazil",start_date:"2026-05-06",status:"Completado",job:"Sales specialist"},
+{name:"Josue Daniel Bolanos Carit",customer:"ACCELA INC.",country:"Costa Rica",start_date:"2026-01-06",status:"Completado",job:"Software Test Lead Engineer"},
+{name:"Ivan Alejandro Plascencia Alcaraz",customer:"Hotel Rehabs LLC",country:"Mexico",start_date:"2026-01-07",status:"Completado",job:"Purchasing Coordinator"},
+{name:"Ana Victoria Ríos",customer:"Horizons Global Technology Pte Ltd",country:"Panama",start_date:"2025-12-12",status:"Completado",job:"Customer service representative"},
+{name:"Marina Grau Jove",customer:"Tg Human Resource Services Co.. Ltd",country:"Andorra",start_date:"2026-04-07",status:"Completado",job:"Accessory Designer"},
+{name:"Daniel Moya Prado",customer:"UniFirst Corporation",country:"Colombia",start_date:"2025-12-17",status:"Completado",job:"National Accounts Ecommerce Support Specialist"},
+{name:"Donovan Mark Clayton",customer:"Globalization Partners Llc",country:"Trinidad and Tobago",start_date:"2026-01-02",status:"Completado",job:"Civil Engineer"},
+{name:"Miranda Keirelle Tucker",customer:"Horizons Global Technology Pte Ltd",country:"Bahamas",start_date:"2025-12-12",status:"Completado",job:"Sales Account Manager"},
+{name:"Joshua Walker",customer:"Globalization Partners Llc",country:"Barbados",start_date:"2025-12-08",status:"Completado",job:"Senior Account Director, Creator Marketing"},
+{name:"Andres Felipe Salazar Vega",customer:"UniFirst Corporation",country:"Colombia",start_date:"2025-12-09",status:"Completado",job:"Central Keying Agent"},
+{name:"Anabelle Demerutis Cuevas",customer:"Ctrip.com (Hong Kong) Limited l",country:"Mexico",start_date:"2026-01-05",status:"Completado",job:"Airline Account Manager"},
+{name:"Adolfo de Jesus Ibarra Rangel",customer:"KMC Solutions AUS PTY. LTD",country:"Colombia",start_date:"2025-11-24",status:"Completado",job:"Test Analyst"},
+{name:"Fernando Bernal Campos",customer:"Teamed Ltd",country:"Mexico",start_date:"2025-11-18",status:"Completado",job:"Regional Sales Engineer"},
+{name:"Oscar Medellin Alcaraz",customer:"Lano Software GmbH",country:"Mexico",start_date:"2025-12-01",status:"Completado",job:"Account Executive"},
+{name:"Juan Jose Alarcon Gonzalez",customer:"LINX INC",country:"El Salvador",start_date:"2025-12-01",status:"Completado",job:"Senior SOX Auditor (External)"},
+{name:"Jordan Campbell",customer:"Eos Global Partners Ltd",country:"Jamaica",start_date:"2025-11-17",status:"Completado",job:"Business Technology Solutions Associate"},
+{name:"Angela Vanessa Peñaloza Vanegas",customer:"UniFirst Corporation",country:"Colombia",start_date:"2025-12-01",status:"Completado",job:"Central Keying Agent"},
+{name:"Osman Stanziola",customer:"Horizons Global Technology Pte Ltd",country:"Panama",start_date:"2025-11-20",status:"Completado",job:"Senior Shipping Specialist"},
+{name:"María Alejandra Rendón García",customer:"UniFirst Corporation",country:"Colombia",start_date:"2025-12-01",status:"Completado",job:"Central Keying Agent"},
+{name:"Alejandro Vanegas Vergara",customer:"UniFirst Corporation",country:"Colombia",start_date:"2025-12-01",status:"Completado",job:"Talent Acquisition Sourcing Specialist"},
+{name:"Renaldo Fils",customer:"INS Global Limited",country:"Bahamas",start_date:"2025-11-20",status:"Completado",job:"Operator Field Technician"},
+{name:"Sagun Pradhan",customer:"Yango Delivery Global FZ. LLC",country:"Nepal",start_date:"2025-11-13",status:"Completado",job:"Support manager"},
+{name:"Arturo Blake Cuervo",customer:"Fesco Adecco Human Resources Service Shanghai Co",country:"Mexico",start_date:"2025-12-01",status:"Completado",job:"Senior ESS Sales Representative"},
+{name:"Perla Lorraine Castañares Carrasco",customer:"Navitas Global Pty Limited",country:"Mexico",start_date:"2025-12-01",status:"Completado",job:"School Engagement Manager, LATAM"},
+{name:"Luis Enrique Jasso Canto",customer:"Navitas Global Pty Limited",country:"Mexico",start_date:"2025-11-01",status:"Completado",job:"Regional Manager - Latin America"},
+{name:"Erik Gabriel Reza Vazquez",customer:"Casco Signal LTD",country:"Mexico",start_date:"2025-12-01",status:"Completado",job:"Installation and Commissioning Engineer"},
+{name:"Nilesh Vrajlal Jivraj",customer:"LLC Breakthrough Technologies",country:"South Africa",start_date:"2025-11-03",status:"Completado",job:"Business Development Director, South Africa"},
+{name:"Jose de la Rosa",customer:"Horizons Global Technology Pte Ltd",country:"Panama",start_date:"2025-11-10",status:"Completado",job:"Chargeback Coordinator"},
+{name:"Anne Yin Li Wang",customer:"FESCO PERSONNEL HK CO LIMITED",country:"Brazil",start_date:"2025-11-03",status:"Completado",job:"GM Assistant"},
+{name:"Marlon Rojas Galeano",customer:"UniFirst Corporation",country:"Colombia",start_date:"2025-11-04",status:"Completado",job:"Director of IT Nearshoring and LATAM"},
+{name:"Bert Telemaque",customer:"Globalization Partners Llc",country:"Barbados",start_date:"2025-11-01",status:"Completado",job:"Datacenter Engineering Lead"},
+{name:"Miguel Quijano Jaramillo",customer:"KMC Solutions AUS PTY. LTD",country:"Colombia",start_date:"2025-11-04",status:"Completado",job:"Front End Developer"},
+{name:"Luis Miguel Rua Rios",customer:"KMC Solutions AUS PTY. LTD",country:"Colombia",start_date:"2025-11-04",status:"Completado",job:"Front End Developer"},
+{name:"Marcello Calegaris Marins de Paulo",customer:"FESCO PERSONNEL HK CO LIMITED",country:"Brazil",start_date:"2025-11-03",status:"Completado",job:"Operation Consultant"},
+{name:"Jingjing Wang",customer:"FESCO PERSONNEL HK CO LIMITED",country:"Mexico",start_date:"2025-11-03",status:"Completado",job:"Brand Marketing Specialist"},
+{name:"Raul Alejandro  Lopez Cruz",customer:"UniFirst Corporation",country:"Colombia",start_date:"2025-11-04",status:"Completado",job:"Endpoint Technology Services Administrator"},
+{name:"Marcos Auada,",customer:"Lano",country:"Brazil",start_date:"2025-11-24",status:"Completado",job:"Sales Manager Brasil"},
+{name:"Yoselin Gonzalez Espinosa",customer:"Oyster. HR Inc.",country:"Panama",start_date:"2025-11-01",status:"Completado",job:"GRC Operations Coordinator"},
+{name:"George Rosas",customer:"Oyster. HR Inc.",country:"Panama",start_date:"2025-11-12",status:"Completado",job:"GRC Operations Coordinator"},
+{name:"Li Wang",customer:"Iflight Technology Co.. Ltd",country:"Mexico",start_date:"2026-05-01",status:"Completado",job:"Senior Sales Specialist"},
+{name:"Alejandro Cesar Lopez Abarca",customer:"Emgeo Global Solutions PTE Ltd",country:"Nicaragua",start_date:"2025-12-01",status:"Completado",job:"Sr. Lead Controls Engineer"},
+{name:"Ariel Colque",customer:"Horizons Global Technology Pte Ltd",country:"Bolivia",start_date:"2025-11-03",status:"Completado",job:"UI/UX Designer"},
+{name:"Kathleen Machado Nunes Pinto",customer:"Groupe Biscuits Leclerc Inc.",country:"Brazil",start_date:"2025-11-03",status:"Completado",job:"Buyer"},
+{name:"Carla Torrez",customer:"Horizons Global Technology Pte Ltd",country:"Panama",start_date:"2025-11-10",status:"En proceso",job:"Customer Service Representative"},
+{name:"Adriana Lucia Gomez Gonzalez",customer:"Grok Global Services, Inc",country:"Colombia",start_date:"2025-10-20",status:"Completado",job:"Regional Manager - Latin America"},
+{name:"Nilk Laws",customer:"Horizons Global Technology Pte Ltd",country:"Panama",start_date:"2025-11-10",status:"Completado",job:"Customer Service Representative"},
+{name:"Erick Ucros",customer:"Horizons Global Technology Pte Ltd",country:"Panama",start_date:"2025-11-10",status:"Completado",job:"Style Master Coordinator"},
+{name:"Amy Louise Aasen",customer:"Oyster. HR Inc.",country:"Mexico",start_date:"2026-04-20",status:"Completado",job:"Sr. Director, Strategic Planning & Operations."},
+{name:"Daniel José Moreira de Assis Viana",customer:"EMATYS International SA",country:"Brazil",start_date:"2025-11-03",status:"Completado",job:"Country Manager Brazil"},
+{name:"Kristopher Chung",customer:"Globalization Partners Llc",country:"Trinidad and Tobago",start_date:"2025-11-01",status:"Completado",job:"Mechanical Designer"},
+{name:"Laura Valencia Avalos",customer:"UniFirst Corporation",country:"Colombia",start_date:"2025-10-20",status:"Completado",job:"Global Benefits & Wellbeing Specialist"},
+{name:"Jose Eduardo Cano Ozaeta",customer:"Horizons Global Technology Pte Ltd",country:"Guatemala",start_date:"2025-10-13",status:"Completado",job:"Project Manager"},
+{name:"Rudy Percy Borda Meza",customer:"HIGHTEKERS US LLP Inc., ",country:"Peru",start_date:"2025-10-13",status:"Completado",job:"Técnico Comercial Perú"},
+{name:"Jorge Andres Rojas Soria",customer:"HIGHTEKERS US LLP Inc., ",country:"Chile",start_date:"2025-10-06",status:"Completado",job:"Técnico Comercial Chile"},
+{name:"Valentina Montoya Duque",customer:"Navitas Global Pty Limited",country:"Colombia",start_date:"2025-10-06",status:"Completado",job:"Student Recruitment Advisor"},
+{name:"Xuhui Shi",customer:"Iflight Technology Co.. Ltd",country:"Brazil",start_date:"2026-03-09",status:"Completado",job:"Sales Specialist"},
+{name:"Mingkun Xian",customer:"Iflight Technology Co.. Ltd",country:"Brazil",start_date:"2026-03-09",status:"Completado",job:"Sales Specialist"},
+{name:"Shu Harn Mei",customer:"FESCO PERSONNEL HK CO LIMITED",country:"Brazil",start_date:"2025-10-20",status:"Completado",job:"Brand Marketing Specialist"},
+{name:"Sopanharith Chea",customer:"Zapeo Limited",country:"Cambodia",start_date:"2025-10-01",status:"Completado",job:"SOFTWARE ENGINEER III"}
 ];
 
 const OFF_DATA = [
@@ -2398,7 +2477,7 @@ function exportCountryBalance() {
     '<Worksheet ss:Name="Balance por País">\n' +
     '<Table ss:ExpandedColumnCount="4">\n' +
     '  <Row><Cell ss:MergeAcross="3" ss:StyleID="ttl"><Data ss:Type="String">Balance HC por País — Serviap Global — ' + escX(today) + '</Data></Cell></Row>\n' +
-    '  <Row><Cell ss:MergeAcross="3" ss:StyleID="sub"><Data ss:Type="String">HC real al corte 31 Ago 2026 menos bajas en proceso del mes corriente</Data></Cell></Row>\n' +
+    '  <Row><Cell ss:MergeAcross="3" ss:StyleID="sub"><Data ss:Type="String">HC real al corte 24 Sep 2026 menos bajas en proceso del mes corriente</Data></Cell></Row>\n' +
     '  <Row/>\n' +
     '  <Row>' + cell('País','hdr') + cell('HC Actual (est.)','hdr') + cell('Bajas Pendientes','hdr') + cell('HC Proyectado','hdr') + '</Row>\n' +
     '  ' + dataRows + '\n' +
